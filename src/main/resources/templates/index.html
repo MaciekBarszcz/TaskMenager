@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Menager</title>
+</head>
+<body>
+<h1>Add new Task</h1>
+<form method="POST" action="#" th:action="@{/save}" th:object="${Task}">
+    <p>Task Name: <input type="text" th:field="*{name}"></p>
+    <p>Task Description: <input type="text" th:field="*{description}"></p>
+    <p><button type="reset" value="Wyczyść">Wyczyść</button><input type="submit" value="Wyślij"></p>
+</form>
+</body>
+</html>
